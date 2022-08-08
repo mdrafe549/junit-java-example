@@ -7,5 +7,5 @@ steps:
     command: "make test"
     plugins:
       - test-collector#v1.0.0:
-          files: "./target/surefire-reports/*.xml"
+          files: "target/surefire-reports/*.xml"
           format: "junit"
