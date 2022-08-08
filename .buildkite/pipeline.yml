@@ -3,9 +3,3 @@ steps:
     command: "mvn test"
     artifact_paths:
       - ./target/surefire-reports/*.xml
-  - label: "🔨 Test"
-    command: "mvn test"
-    plugins:
-      - test-collector#v1.0.0:
-          files: "./target/surefire-reports/TEST-com.javacodegeeks.examples.junitmavenexample.CalculatorTest.xml"
-          format: "junit"
