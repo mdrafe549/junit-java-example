@@ -1,0 +1,5 @@
+steps:
+  - label : "Build"
+    command: "mvn test"
+    artifact_paths:
+      - ./target/surefire-reports/*.xml
