@@ -8,5 +8,5 @@ steps:
     command: "mvn test"
     plugins:
       - test-collector#v1.0.0:
-          files: "/junit*.xml"
+          files: "./target/surefire-reports/*.xml"
           format: "junit"
