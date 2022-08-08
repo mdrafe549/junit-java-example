@@ -3,3 +3,9 @@ steps:
     command: "mvn test"
     artifact_paths:
       - ./target/surefire-reports/*.xml
+  - label: "🔨 Test"
+    command: "make test"
+    plugins:
+      - test-collector#v1.0.0:
+          files: "./target/surefire-reports/*.xml"
+          format: "junit"
